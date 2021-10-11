@@ -1,28 +1,30 @@
 import keyboard as kb
 import time
 
-print("Welcome to Whatsapp AutoTag\n")
-print("Enter the Number of members in your Group excluding yourself : ")
-x = int(input())
 
-print("Click on the whatsap group chatbox within 10 seconds or else u are doomed")
-time.sleep(10)
+if __name__ = "__main__":
+    print("Welcome to Whatsapp AutoTag\n")
+    print("Enter the Number of members in your Group excluding yourself : ")
+    x = int(input())
 
-i = 0
+    print("Click on the whatsap group chatbox within 10 seconds or else u are doomed")
+    time.sleep(10)
 
-while i!=x:
-    j = 0
-    kb.press("shift + @")
-    kb.release("shift + @")
+    i = 0
 
-    while j!=i:
-        kb.press("down")
-        kb.release("down")
-        j+=1
+    while i!=x:
+        j = 0
+        kb.press("shift + @")
+        kb.release("shift + @")
 
-    kb.press("enter")
-    kb.release("enter")
-    i+=1
-    time.sleep(0.2)
+        while j!=i:
+            kb.press("down")
+            kb.release("down")
+            j+=1
+
+        kb.press("enter")
+        kb.release("enter")
+        i+=1
+        time.sleep(0.2)
 
 
