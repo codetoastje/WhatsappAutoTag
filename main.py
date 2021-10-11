@@ -2,7 +2,7 @@ import keyboard as kb
 import time
 
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     print("Welcome to Whatsapp AutoTag\n")
     print("Enter the Number of members in your Group excluding yourself : ")
     x = int(input())
